@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    
+    
+    <title>Snakes Project</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome To Snakes Project</h2>
+        
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a> </li>  <!--you can do it by getting the url name -->
+                <li><a href="/about">About</a></li> <!--or you can simply but the path name-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    
+    <footer>
+        <h3>
+            Copyright &copy;
+        </h3>
+    </footer>
+    
+</body>
+</html>
